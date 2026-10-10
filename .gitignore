@@ -1,0 +1,29 @@
+# Build artifacts
+build/
+cmake-build-*/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.exe
+*.out
+*.elf
+*.bin
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and OS temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.vscode/
