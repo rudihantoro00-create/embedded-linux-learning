@@ -1,24 +1,22 @@
 #include <iostream>
+ void A( const int& x) //不能修改x，该函数作用只是为了读取某个大数据
+ {
+    
+    std::cout << "x = " << x << std::endl;
 
+ }
+void B(int& x)  //不复制可以修改外部变量
+{
+
+    x=100;
+}
 
 int main()
 {
     int a = 10;
-
-    int& ref = a;
-
+    A(a);
+    
     std::cout << "a = " << a << std::endl;
-    std::cout << "ref = " << ref << std::endl;
-
-
-    ref = 20;
-
-
-    std::cout << "after change:" << std::endl;
-
-    std::cout << "a = " << a << std::endl;
-    std::cout << "ref = " << ref << std::endl;
-
 
     return 0;
 }
